@@ -1,10 +1,9 @@
 /****** Main Styling ******/
 
 body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
   color: #222;
-  background-color: #ECF0F1;
+  background-color: rgb(40, 173, 156);
   text-align: center;
 }
 
@@ -17,26 +16,35 @@ body {
   margin-top: 60px;
 }
 
-a {
-  color: #2574A9;
-}
-
-input {
-  display: block;
-  position: relative;
-  margin: 10px auto;
-}
-
-input#button {
-  width: 230px;
-}
-
 .view {
-  position:relative;
+  /* position:relative; */
   margin: auto;
   margin-top: 40px;
-  border: 1px  solid  #aaa;
+  border: .5vw  solid  #1c6b61;
+  border-radius: .5vw;
   padding: 20px;
   width: 60%;
   min-width: 400px;
+}
+
+#button {
+  background-color: rgb(40, 173, 156);
+  border: 3px solid #1c6b61;
+  width: 100px;
+  border-radius: 5px;
+  padding: 2px;
+  margin-left: -5px;
+}
+
+#button:active {
+  background-color: rgb(32, 145, 130)
+}
+input:hover {
+  cursor: pointer;
+}
+
+#github, #linkedin {
+  font-size: 3.5vw;
+  margin: 5px;
+  color: #1c6b61
 }

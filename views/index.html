@@ -1,34 +1,54 @@
 <!DOCTYPE html>
 
 <html>
-   <head>
-      <title>File Metadata</title>
-      <link rel="shortcut icon" href="https://cdn.freecodecamp.org/universal/favicons/favicon-32x32.png" type="image/x-icon"/>
-      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
-      <link href="/public/style.css" rel="stylesheet" type="text/css">
-   </head>
+  <head>
+    <title>File Metadata</title>
+    <link
+      rel="shortcut icon"
+      href="https://cdn.freecodecamp.org/universal/favicons/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="/public/style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/909ca40244.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>API Project: File Metadata Microservice</h2>
 
-   <body>
-      <div class="container">
-        <h2>API Project: File Metadata Microservice</h2>
-
-        <h3>Usage:</h3>
-        <p>
-          Please Upload a File ...
-        </p>
-        <div class="view">
-          <h4 id="output"></h4>
-          <form enctype="multipart/form-data" method="POST" action="/api/fileanalyse">
-            <input id="inputfield" type="file" name="upfile">
-            <input id="button" type="submit" value="Upload">
-          </form>
-        </div>
+      <!-- <h3>Usage:</h3>
+      <p>
+        Upon uploading a file, server responds with name of the file, its type, and its size in bytes.
+      </p> -->
+      <div class="view">
+        <h4>Usage:</h3>
+      <p>
+        Upon uploading a file, server responds with name of the file, its type, and its size in bytes.
+      </p>
+        <!-- <h4 id="output"></h4> -->
+        <form
+          enctype="multipart/form-data"
+          method="POST"
+          action="/api/fileanalyse"
+        >
+          <input id="inputfield" type="file" name="upfile">
+          <input id="button" type="submit" value="Upload" />
+        </form>
       </div>
-      <div class="footer">
-        <p>
-          by 
-          <a href="http://www.freecodecamp.com">freeCodeCamp</a>
-        </p>
-      </div>
-   </body>
+    </div>
+    <div class="footer">
+      <a href="https://www.linkedin.com/in/josejassojr/" target="blank"><i class="fab fa-linkedin" id="linkedin"></i></a>
+      <a href="https://github.com/josejassojr" target="blank"><i class="fab fa-github" id="github"></i></a>
+    </div>
+  </body>
 </html>
